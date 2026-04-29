@@ -32,13 +32,13 @@ a:hover {
 
     /* 判定ボタンのスタイル */
     button {
-        font-size: 6rem;       /* 文字を大きく */
-        padding: 10px 20px;      /* 上下・左右の余白を増やす */
+        font-size: 2rem;       /* 文字を大きく */
+        padding: 4px 2px;      /* 上下・左右の余白を増やす */
         cursor: pointer;         /* マウスを乗せた時に指アイコンにする */
         background-color: #007bff; /* ボタンの色を青にする */
         color: white;            /* 文字を白にする */
         border: none;            /* 標準の枠線を消す */
-        border-radius: 25px;      /* 角を丸く */
+        border-radius: 15px;      /* 角を丸く */
         vertical-align: middle;  /* 入力欄と高さを揃える */
     }
 
