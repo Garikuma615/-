@@ -24,6 +24,7 @@ a:hover {
         font-size: 30rem;       /* 文字を大きく */
         padding: 50px;           /* 内側の余白を増やす */
         width: 1250px;            /* 横幅を広げる */
+        hight: 500px;            /* 立幅  */
         border: 10px solid #ccc;  /* 枠線を少し太く */
         border-radius: 25px;      /* 角を丸く */
     }
