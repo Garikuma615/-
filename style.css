@@ -31,7 +31,7 @@ a:hover {
     /* 判定ボタンのスタイル */
     button {
         font-size: 6rem;       /* 文字を大きく */
-        padding: 50px 100px;      /* 上下・左右の余白を増やす */
+        padding: 10px 20px;      /* 上下・左右の余白を増やす */
         cursor: pointer;         /* マウスを乗せた時に指アイコンにする */
         background-color: #007bff; /* ボタンの色を青にする */
         color: white;            /* 文字を白にする */
