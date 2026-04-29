@@ -14,68 +14,43 @@
 
 
 
-    <h2>問題：<p>★☆☆☆☆</p>
+    <h2><p>★☆☆☆☆</p>
 <p>水酸化ナトリウム水溶液と酢酸を１mol：２molで反応させた。このとき、反応し終わったときの水溶液は何性か。</p>
 <p>ただし、水溶液中の水酸化ナトリウム、酢酸はすべて電離しているものとする。</p></h2>
     
     <!-- 解答入力欄 -->
-    <input type="text" id="answer2" placeholder="答えを入力">
+    <input type="text" id="answer" placeholder="答えを入力">
     
     <!-- 判定ボタン -->
-    <button onclick="checkAnswer(2)">判定</button>
+    <button onclick="checkAnswer()">判定</button>
     
     <!-- 結果表示エリア -->
-    <p id="result2"></p>
+    <p id="result"></p>
 
+    
     <script>
-        function checkAnswer(num) {
-    // 正解を配列などで用意しておく
-    const correctAnswers = {
-        1: "HTML",
-        2: "CSS"
-    };
+        function checkAnswer() {
+            // 正解の定義
+            const correctAnswer = "HTML";
+            
+            // 入力された値を取得
+            let userAnswer = document.getElementById("answer").value;
+            let resultMessage = "";
 
-    // 引数 num を使って、対応する ID の値を取得
-    let userAnswer = document.getElementById("answer" + num).value;
-    let resultElement = document.getElementById("result" + num);
-
-    if (userAnswer.trim() === correctAnswers[num]) {
-        resultElement.innerText = "✅ 正解！";
-    } else {
-        resultElement.innerText = "❌ 不正解...";
-    }
-}
+            // 正誤判定
+            if (userAnswer.trim() === correctAnswer) {
+                resultMessage = "✅ 正解！";
+            } else {
+                resultMessage = "❌ 不正解... (正解は " + correctAnswer + ")";
+            }
 
             // 結果を表示
-            document.getElementById("result2").innerText = resultMessage;
+            document.getElementById("result").innerText = resultMessage;
         }
     </script>
 
 
-<p>★★☆☆☆</p>
-<p>水酸化ナトリウム水溶液と酢酸を反応させ、中和した時、発生する物質をすべて答えなさい。</p>
-        <!-- 解答入力欄 -->
-    <input type="text" id="answer1" placeholder="答えを入力">
-    
-    <!-- 判定ボタン -->
-    <button onclick="checkAnswer(1)">判定</button>
-    
-    <!-- 結果表示エリア -->
-    <p id="result1"></p>
 
-
-
-<p>★★★☆☆</p>
-<p>0.30mol/Lの水酸化ナトリウム水溶液を20mL、0.30mol/Lの塩酸10mLをすべて反応させたときの水溶液のPHを答えなさい。</p>
-<p>ただし、水溶液中の水酸化ナトリウム、酢酸はすべて電離しているものとして考え、中和反応時に発生するH2Oは無視してよいものとする。</p>
-
-<p>★★★★☆</p>
-<p>1.0×10-8mol/Lの水酸化ナトリウム水溶液と、1.0×10-8mol/Lの酢酸のPH（小数第2位まで）をそれぞれ求めよ</p>
-<p>ただし、log101.05=0.02とする　</p>
-<p>ただし、水溶液中の水酸化ナトリウム、酢酸はすべて電離しているものとする。</p>
-
-<p>★★★★★</p>
-<p>3.0×10-5mol/Lの酢酸水溶液のPHを求めよ。ただし、酢酸の電離定数は2.7×10-5mol/Lとする。log101.8=0.25とする</p>
   </font>
   
   
