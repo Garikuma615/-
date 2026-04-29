@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>
+  化学部展 待機問題
+</title>
+  <link rel="icon" href="favicon.ico?update=001" type="image/x-icon">
+</head>
+<body>
+  <h1><font color=black>高校生・大人用問題</font></h1>
+  <font color=black>
+  <p>水酸化ナトリウムと酢酸の中和について考えよう</p>
+
+
+
+    <h2><p>★★☆☆☆</p>
+<p></p>
+<p></p></h2>
+    
+    <!-- 解答入力欄 -->
+    <input type="text" id="answer" placeholder="答えを入力">
+    
+    <!-- 判定ボタン -->
+    <button onclick="checkAnswer()">判定</button>
+    
+    <!-- 結果表示エリア -->
+    <p id="result"></p>
+
+    
+<script>
+    function checkAnswer() {
+        const correctAnswer = "";
+        let userAnswer = document.getElementById("answer").value;
+        
+        // 【重要】表示先の要素を「resultTarget」として取得しておく
+        let resultTarget = document.getElementById("result");
+
+        if (userAnswer.trim() === correctAnswer) {
+            // 正解の時は innerHTML でリンクを表示
+            resultTarget.innerHTML = `<a class="first after" href="problemm2.html">正解！次の問題はこちらから！</a>`;
+        } else {
+            // 不正解の時は innerText で文字を表示
+            resultTarget.innerText = "不正解... (解説は部員まで)";
+        }
+    }
+</script>
+
+
+
+  </font>
+  
+  
+
+  
+</body>
+<script src="script.js"></script>
+</body>
+</html>
