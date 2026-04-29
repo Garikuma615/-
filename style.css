@@ -47,9 +47,9 @@ a:hover {
 
     /* 結果表示の文字も大きく */
     #result {
-        font-size: 7.5rem;
+        font-size: 1.5rem;
         font-weight: bold;
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
 
