@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>
+  化学部展 待機問題
+</title>
+  <link rel="icon" href="favicon.ico?update=001" type="image/x-icon">
+</head>
+<body>
+  <h1><font color=black>展示・演示・体験実験について</font></h1>
+  <font color=black>
+  <p>演示実験について</p>
+
+
+
+    <h2><p>★★★★★</p>
+<p>塩化ストロンチウムを燃やしたとき、何色の炎になったか。</p></h2>
+    
+    <!-- 解答入力欄 -->
+    <input type="text" id="answer" placeholder="答えを入力">
+    
+    <!-- 判定ボタン -->
+    <button onclick="checkAnswer()">判定</button>
+    
+    <!-- 結果表示エリア -->
+    <p id="result"></p>
+
+    
+<script>
+    function checkAnswer() {
+        const correctAnswer = "白色";
+        let userAnswer = document.getElementById("answer").value;
+        
+        // 【重要】表示先の要素を「resultTarget」として取得しておく
+        let resultTarget = document.getElementById("result");
+
+        if (userAnswer.trim() === correctAnswer) {
+            // 正解の時は innerHTML でリンクを表示
+            resultTarget.innerHTML = `全問正解おめでとう！他の問題にもチャレンジしてみてね！;
+        } else {
+            // 不正解の時は innerText で文字を表示
+            resultTarget.innerText = "不正解... 演示実験で見てみてね";
+        }
+    }
+</script>
+
+
+
+  </font>
+  
+  
+
+  
+</body>
+<script src="script.js"></script>
+</body>
+</html>
