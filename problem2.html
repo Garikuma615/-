@@ -14,7 +14,7 @@
 
 
 
-    <h2><p>★★☆☆☆</p>
+    <h2><p>★☆☆☆☆</p>
 <p>水酸化ナトリウム水溶液と酢酸を反応させ、中和した時、発生する塩を答えなさい。</p></h2>
     
     <!-- 解答入力欄 -->
@@ -27,28 +27,23 @@
     <p id="result"></p>
 
     
-    <script>
-        function checkAnswer() {
-            // 正解の定義
-            const correctAnswer = "酢酸ナトリウム";
-            
-            // 入力された値を取得
-            let userAnswer = document.getElementById("answer").value;
-            let resultMessage = "";
+<script>
+    function checkAnswer() {
+        const correctAnswer = "酢酸ナトリウム";
+        let userAnswer = document.getElementById("answer").value;
+        
+        // 【重要】表示先の要素を「resultTarget」として取得しておく
+        let resultTarget = document.getElementById("result");
 
-            // 正誤判定
-            if (userAnswer.trim() === correctAnswer) {
-                resultMessage = "正解！　<div class="wrapper">
-  <a class="first after" href="problem3.html">次の問題はこちら</a>
-</div>";
-            } else {
-                resultMessage = "不正解... (解説は部員まで)";
-            }
-
-            // 結果を表示
-            document.getElementById("result").innerText = resultMessage;
+        if (userAnswer.trim() === correctAnswer) {
+            // 正解の時は innerHTML でリンクを表示
+            resultTarget.innerHTML = `<a class="first after" href="problem3.html">正解！次の問題はこちらから！</a>`;
+        } else {
+            // 不正解の時は innerText で文字を表示
+            resultTarget.innerText = "不正解... (解説は部員まで)";
         }
-    </script>
+    }
+</script>
 
 
 
