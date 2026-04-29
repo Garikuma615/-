@@ -28,20 +28,23 @@
     <p id="result2"></p>
 
     <script>
-        function checkAnswer(2) {
-            // 正解の定義
-            const correctAnswer2 = "酸性";
-            
-            // 入力された値を取得
-            let userAnswer = document.getElementById("answer2").value;
-            let resultMessage = "";
+        function checkAnswer(num) {
+    // 正解を配列などで用意しておく
+    const correctAnswers = {
+        1: "HTML",
+        2: "CSS"
+    };
 
-            // 正誤判定
-            if (userAnswer.trim(2) === correctAnswer2) {
-                resultMessage = "正解！";
-            } else {
-                resultMessage = "不正解... (解説は部員まで)";
-            }
+    // 引数 num を使って、対応する ID の値を取得
+    let userAnswer = document.getElementById("answer" + num).value;
+    let resultElement = document.getElementById("result" + num);
+
+    if (userAnswer.trim() === correctAnswers[num]) {
+        resultElement.innerText = "✅ 正解！";
+    } else {
+        resultElement.innerText = "❌ 不正解...";
+    }
+}
 
             // 結果を表示
             document.getElementById("result2").innerText = resultMessage;
