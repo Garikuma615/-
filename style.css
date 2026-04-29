@@ -21,22 +21,22 @@ a:hover {
 
     /* 入力欄のスタイル */
     #answer {
-        font-size: 1.2rem;       /* 文字を大きく */
-        padding: 10px;           /* 内側の余白を増やす */
-        width: 250px;            /* 横幅を広げる */
-        border: 2px solid #ccc;  /* 枠線を少し太く */
-        border-radius: 5px;      /* 角を丸く */
+        font-size: 6rem;       /* 文字を大きく */
+        padding: 50px;           /* 内側の余白を増やす */
+        width: 1250px;            /* 横幅を広げる */
+        border: 10px solid #ccc;  /* 枠線を少し太く */
+        border-radius: 25px;      /* 角を丸く */
     }
 
     /* 判定ボタンのスタイル */
     button {
-        font-size: 1.2rem;       /* 文字を大きく */
-        padding: 10px 20px;      /* 上下・左右の余白を増やす */
+        font-size: 6rem;       /* 文字を大きく */
+        padding: 50px 100px;      /* 上下・左右の余白を増やす */
         cursor: pointer;         /* マウスを乗せた時に指アイコンにする */
         background-color: #007bff; /* ボタンの色を青にする */
         color: white;            /* 文字を白にする */
         border: none;            /* 標準の枠線を消す */
-        border-radius: 5px;      /* 角を丸く */
+        border-radius: 25px;      /* 角を丸く */
         vertical-align: middle;  /* 入力欄と高さを揃える */
     }
 
@@ -47,9 +47,9 @@ a:hover {
 
     /* 結果表示の文字も大きく */
     #result {
-        font-size: 1.5rem;
+        font-size: 7.5rem;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 100px;
     }
 
 
