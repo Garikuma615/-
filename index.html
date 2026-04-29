@@ -19,7 +19,7 @@
 <p>ただし、水溶液中の水酸化ナトリウム、酢酸はすべて電離しているものとする。</p></h2>
     
     <!-- 解答入力欄 -->
-    <input type="text" id="answer2" placeholder="答えを入力1">
+    <input type="text" id="answer2" placeholder="答えを入力">
     
     <!-- 判定ボタン -->
     <button onclick="checkAnswer(2)">判定</button>
@@ -55,7 +55,7 @@
 <p>★★☆☆☆</p>
 <p>水酸化ナトリウム水溶液と酢酸を反応させ、中和した時、発生する物質をすべて答えなさい。</p>
         <!-- 解答入力欄 -->
-    <input type="text" id="answer1" placeholder="答えを入力1">
+    <input type="text" id="answer1" placeholder="答えを入力">
     
     <!-- 判定ボタン -->
     <button onclick="checkAnswer(1)">判定</button>
@@ -63,26 +63,7 @@
     <!-- 結果表示エリア -->
     <p id="result1"></p>
 
-    <script>
-        function checkAnswer(1) {
-            // 正解の定義
-            const correctAnswer1 = "酸性";
-            
-            // 入力された値を取得
-            let userAnswer = document.getElementById("answer1").value;
-            let resultMessage = "";
 
-            // 正誤判定
-            if (userAnswer.trim(1) === correctAnswer1) {
-                resultMessage = "正解！";
-            } else {
-                resultMessage = "不正解... (解説は部員まで)";
-            }
-
-            // 結果を表示
-            document.getElementById("result1").innerText = resultMessage;
-        }
-    </script>
 
 <p>★★★☆☆</p>
 <p>0.30mol/Lの水酸化ナトリウム水溶液を20mL、0.30mol/Lの塩酸10mLをすべて反応させたときの水溶液のPHを答えなさい。</p>
