@@ -39,7 +39,7 @@
 
         if (userAnswer.trim() === correctAnswer) {
             // 正解の時は innerHTML でリンクを表示
-            resultTarget.innerHTML = `<a class="first after" href="変顔.png">全問正解おめでとう！作問者の変顔はこちら！</a>`;
+            resultTarget.innerHTML = `<a class="first after" href="変顔.png">全問正解おめでとう！作問者の変顔はこちら！<p>展示大賞は化学部展まで</p></a>`;
         } else {
             // 不正解の時は innerText で文字を表示
             resultTarget.innerText = "不正解... (解説は部員まで)";
