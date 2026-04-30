@@ -16,11 +16,14 @@
 
 
     <h2><p>★★☆☆☆</p>
-<p></p>
-<p></p></h2>
+<p>Aの元素番号×（Bの元素番号+Cの元素番号）=?</p>
+<p>Aの説明:</p>
+    <p>Bの説明:</p>
+    <p>Cの説明:</p>
+    </h2>
     
     <!-- 解答入力欄 -->
-    <input type="text" id="answer" placeholder="答えを入力">
+    <input type="text" id="answer" placeholder="答えを入力(半角英数字)">
     
     <!-- 判定ボタン -->
     <button onclick="checkAnswer()">判定</button>
@@ -31,7 +34,7 @@
     
 <script>
     function checkAnswer() {
-        const correctAnswer = "";
+        const correctAnswer = "411";
         let userAnswer = document.getElementById("answer").value;
         
         // 【重要】表示先の要素を「resultTarget」として取得しておく
