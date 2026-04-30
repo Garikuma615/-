@@ -16,8 +16,11 @@
 
 
     <h2><p>★☆☆☆☆</p>
-<p></p>
-<p></p></h2>
+<p>金の元素記号は①④</p>
+<p>亜鉛の元素記号は②⑤</p>
+<p>ホウ素の元素記号は③</p>
+<p>①②①③④=？？？？？</p>
+<p>（分からない人は元素周期表を確認してみよう）</p></h2>
     
     <!-- 解答入力欄 -->
     <input type="text" id="answer" placeholder="答えを入力">
@@ -31,7 +34,7 @@
     
 <script>
     function checkAnswer() {
-        const correctAnswer = "";
+        const correctAnswer = "AZABu";
         let userAnswer = document.getElementById("answer").value;
         
         // 【重要】表示先の要素を「resultTarget」として取得しておく
@@ -42,7 +45,7 @@
             resultTarget.innerHTML = `<a class="first after" href="problemm2.html">正解！次の問題はこちらから！</a>`;
         } else {
             // 不正解の時は innerText で文字を表示
-            resultTarget.innerText = "不正解... (解説は部員まで)";
+            resultTarget.innerText = "不正解... ヒント:大文字と小文字";
         }
     }
 </script>
